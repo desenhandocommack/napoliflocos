@@ -1,15 +1,18 @@
 {
-  "name": "my-discord-bot",
-  "version": "1.0.0",
-  "description": "",
+  "name": "napoliflocos",
+  "version": "0.0.1",
+  "description": "A simple Discord bot",
   "main": "bot.js",
+  "private": true,
+  "scripts": {
+    "start": "node bot.js"
+  },
   "dependencies": {
+    "express": "^4.17.1",
     "discord.js": "^11.5.1"
   },
-  "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "engines": {
+    "node": "8.x"
   },
-  "author": "",
-  "license": "ISC"
+  "license": "MIT"
 }
