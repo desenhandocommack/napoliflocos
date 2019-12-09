@@ -24,3 +24,4 @@ Replicante
 Hobbit
 Zumbi
 Robô
+Kobold
