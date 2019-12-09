@@ -10,8 +10,8 @@ Gnomo                        | Gnoma
 Dragão                       | Dragonesa
 Centauro                     | Centaura
 Minotauro                    | Minotaura
-Elfo Alado                   | Elfa Alado
-Elfo Negro                   | Elfa Negro
+Elfo Alado                   | Elfa Alada
+Elfo Negro                   | Elfa Negra
 Meio Elfo                    | Meio Elfa
 Orc                          | Orquisa
 Meio Orc                     | Meio Orquisa
