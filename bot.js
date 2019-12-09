@@ -46,6 +46,19 @@ function read(filename) {
   }, []);
 }
 
+function makeMessage() {
+  const gender = rand(genders);
+  const kind = rand(races)[gender];
+  const clazz = rand(classes)[gender];
+  const equip = rand(equipaments);
+  const adj = rand(adjectives)[equip.gender].toLowerCase();
+  const article = articles[gender];
+
+  return `\nDesenha ${article} **${kind} ${clazz} ${rand(verbs)} ${
+    equip.name
+  } ${adj}**`;
+}
+
 const verbs = [
   'fazendo',
   'criando',
@@ -73,22 +86,33 @@ const verbs = [
   'arremessando'
 ];
 
+const positiveAnswer = [
+  'De nada!',
+  'Que isso amigo, foi um prazer te ajudar!',
+  'Eu que agradeço',
+  'Incrivel! Bate aqui ✋'
+];
+
+const negativeAnswer = [
+  'Então vamos mais uma vez',
+  'Acho que você está inventando desculpas'
+];
+
 client.on('message', msg => {
   if (msg.author.bot || msg.channel.id !== '653659853872693248') {
     return;
-  } else if (msg.content.match(/(preciso|sem).*id[eé]ia/g)) {
-    const gender = rand(genders);
-    const kind = rand(races)[gender];
-    const clazz = rand(classes)[gender];
-    const equip = rand(equipaments);
-    const adj = rand(adjectives)[equip.gender].toLowerCase();
-    const article = articles[gender];
+  } else if (msg.content.toLocaleLowerCase().includes('não gostei')) {
+    const answer = rand(negativeAnswer);
 
-    msg.reply(
-      `\nDesenha ${article} **${kind} ${clazz} ${rand(verbs)} ${
-        equip.name
-      } ${adj}**`
-    );
+    if (answer === 'Então vamos mais uma vez') {
+      msg.reply(`${answer}${makeMessage()}`);
+    } else {
+      msg.reply(answer);
+    }
+  } else if (msg.content.toLocaleLowerCase().match(/obrigado|obg|valeu/g)) {
+    msg.reply(rand(positiveAnswer));
+  } else if (msg.content.match(/(preciso|sem).*id[eé]ia/g)) {
+    msg.reply(makeMessage());
   } else if (
     msg.content.toLowerCase().includes('napolitano') &&
     msg.content.includes('flocos')
