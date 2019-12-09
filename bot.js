@@ -74,7 +74,7 @@ const verbs = [
 ];
 
 client.on('message', msg => {
-  if (msg.author.bot) {
+  if (msg.author.bot || msg.channel.name.toLowerCase() !== 'napoliflocos') {
     return;
   } else if (msg.content.match(/(preciso|sem).*id[eé]ia/g)) {
     const gender = rand(genders);
