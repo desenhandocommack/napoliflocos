@@ -1,0 +1,26 @@
+Masculine                    | Feminine
+-----------------------------|--------------------------------------------------
+Elfo                         | Elfa
+Humano                       | Humana
+Anão                         | Anã
+Reptiliano                   | Reptiliana
+Tritão                       | Sereia
+Draconato                    | Draconata
+Gnomo                        | Gnoma
+Dragão                       | Dragonesa
+Centauro                     | Centaura
+Minotauro                    | Minotaura
+Elfo Alado                   | Elfa Alado
+Elfo Negro                   | Elfa Negro
+Meio Elfo                    | Meio Elfa
+Orc                          | Orquisa
+Meio Orc                     | Meio Orquisa
+Vampiro                      | Vampira
+Animatronic                  | Animatronic
+Ogro                         | Ogra
+Furry                        | Furry
+Duende
+Replicante
+Hobbit
+Zumbi
+Robô

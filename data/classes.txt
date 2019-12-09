@@ -1,0 +1,25 @@
+Masculine                    | Feminine
+-----------------------------|--------------------------------------------------
+Arqueiro                     | Arqueira
+Ferreiro                     | Ferreira
+Padeiro                      | Padeira
+Mensageiro                   | Mensageira
+Besteiro                     | Besteira
+Lanceiro                     | Lanceira
+Mago                         | Maga
+Arqui Mago                   | Arqui Maga
+Paladino                     | Paladina
+Mago das Chamas              | Maga das Chamas
+Psionico                     | Psionica
+Ilusionista                  | Ilusionista
+Mágico                       | Mágica
+Shinobi                      | Kunoichi
+Infiltrador                  | Infiltradora
+Bárbaro                      | Bárbara
+Ladino                       | Ladina
+Pirata
+Piromante
+Necromante
+Espadachim
+Samurai
+Ranger

@@ -1,0 +1,28 @@
+Masculine                    | Feminine
+-----------------------------|--------------------------------------------------
+Pequeno                      | Pequena
+Médio                        | Média
+Quebrado                     | Quebrada
+Danificado                   | Danificada
+Destruído                    | Destruída
+Novo                         | Nova
+Velho                        | Velha
+Sujo                         | Suja
+Limpo                        | Limpa
+Colorido                     | Colorida
+Espinhoso                    | Espinhosa
+Pontudo                      | Pontuda
+Encantado                    | Encantada
+Mágico                       | Mágica
+Épico                        | Épica
+Gosmento                     | Gosmenta
+Empoeirado                   | Empoeirada
+Descascado                   | Descascada
+Voador                       | Voadora
+Luminoso                     | Luminosa
+Elétrico                     | Elétrica
+Assombroso                   | Assombrosa
+Queimado                     | Queimada
+Grande
+Flamejante
+Brilhante

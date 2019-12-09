@@ -1,0 +1,21 @@
+Name                         | Gender
+-----------------------------|--------------------------------------------------
+uma Espada                   | feminine
+uma Bolsa                    | feminine
+uma Alabarda                 | feminine
+uma Adaga                    | feminine
+uma Varinha                  | feminine
+uma Lanterna                 | feminine
+uma Pulseira                 | feminine
+uma Luva                     | feminine
+um Arco e Fecha              | masculine
+um Escudo                    | masculine
+um Machado                   | masculine
+um Martelo                   | masculine
+um Cajado                    | masculine
+um Livro                     | masculine
+um Óculos                    | masculine
+um Chapéu                    | masculine
+um Capuz                     | masculine
+um Colar                     | masculine
+um Capacete                  | masculine
