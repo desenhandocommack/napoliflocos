@@ -18,6 +18,7 @@ app.get('/', (request, response) => {
 });
 
 app.listen(process.env.PORT);
+
 setInterval(() => {
   http.get(`http://${process.env.PROJECT_DOMAIN}.glitch.me/`);
 }, 280000);
@@ -101,7 +102,7 @@ const negativeAnswer = [
 client.on('message', msg => {
   if (msg.author.bot || msg.channel.id !== '653659853872693248') {
     return;
-  } else if (msg.content.toLocaleLowerCase().includes('não gostei')) {
+  } else if (msg.content.toLocaleLowerCase().match(/não gostei/i)) {
     const answer = rand(negativeAnswer);
 
     if (answer === 'Então vamos mais uma vez') {
@@ -109,20 +110,20 @@ client.on('message', msg => {
     } else {
       msg.reply(answer);
     }
-  } else if (msg.content.toLocaleLowerCase().match(/obrigado|obg|valeu/g)) {
+  } else if (msg.content.toLocaleLowerCase().match(/obrigado|obg|valeu/i)) {
     msg.reply(rand(positiveAnswer));
-  } else if (msg.content.match(/(preciso|sem).*id[eé]ia/g)) {
+  } else if (msg.content.match(/(preciso|sem).*id[eé]ia/i)) {
     msg.reply(makeMessage());
   } else if (
-    msg.content.toLowerCase().includes('napolitano') &&
+    msg.content.toLowerCase().match(/napolitano/i) &&
     msg.content.includes('flocos')
   ) {
     msg.reply('Hummm... Excelente combinação!');
-  } else if (msg.content.toLowerCase().includes('flocos')) {
+  } else if (msg.content.toLowerCase().match(/flocos/i)) {
     msg.reply(
       'Sabe o que vai bem com sorvete de Flocos? Isso mesmo, um Napolitano!'
     );
-  } else if (msg.content.toLowerCase().includes('napolitano')) {
+  } else if (msg.content.toLowerCase().match(/napolitano/i)) {
     msg.reply('Adoro! Com Flocos, melhor ainda!');
   }
 });
