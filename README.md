@@ -1,3 +1,5 @@
+[![Run on Repl.it](https://repl.it/badge/github/desenhandocommack/napoliflocos)](https://repl.it/github/desenhandocommack/napoliflocos)
+
 Napoliflocos é um bot simples feito pro servidor oficial do canal
 [Desenhando com Mack](https://youtube.com/desenhandocommack).
 
