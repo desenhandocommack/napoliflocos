@@ -90,7 +90,7 @@ const negativeAnswer = [
   'Acho que você está inventando desculpas',
 ];
 
-client.on('message', (msg) => {
+client.on('message', async (msg) => {
   if (msg.author.bot || !['760585029021204500'].includes(msg.channel.id)) {
     return;
   } else if (msg.content.toLocaleLowerCase().match(/não gostei/i)) {
