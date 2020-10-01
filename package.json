@@ -11,8 +11,7 @@
     "dicebag": "^0.1.2",
     "discord.js": "^12.3.1"
   },
-  "engines": {
-    "node": "8.x"
-  },
-  "license": "MIT"
+  "devDependencies": {
+    "eslint": "^7.10.0"
+  }
 }
