@@ -1,6 +1,3 @@
-const http = require("http");
-const express = require("express");
-const app = express();
 const Discord = require("discord.js");
 const client = new Discord.Client();
 const fs = require("fs");
@@ -11,23 +8,9 @@ const races = read("races.txt");
 const classes = read("classes.txt");
 const adjectives = read("adjectives.txt");
 const equipaments = read("equipaments.txt");
-const { parse, pool, roll } = require('dicebag');
+const { parse, pool } = require("dicebag");
 
-app.get("/", (request, response) => {
-  console.log(Date.now() + " Ping Received");
-  // response.sendStatus(200);
-  response.send("🍨 Estou acordado!");
-});
-
-app.listen(process.env.PORT);
-
-setInterval(() => {
-  http.get(`http://${process.env.PROJECT_DOMAIN}.glitch.me/`);
-}, 280000);
-
-client.on("ready", () => {
-  console.log(`Logged in as ${client.user.tag}!`);
-});
+client.on("ready", () => console.log(`Logged in as ${client.user.tag}!`));
 
 function rand(array) {
   return array[Math.floor(Math.random() * array.length)];
@@ -35,15 +18,13 @@ function rand(array) {
 
 function read(filename) {
   const txt = fs
-    .readFileSync(path.join(__dirname, "data", filename), {
-      encoding: "utf8"
-    })
+    .readFileSync(path.join(__dirname, "data", filename), { encoding: "utf8" })
     .split("\n");
 
-  const header = txt[0].split("|").map(r => r.trim().toLowerCase());
+  const header = txt[0].split("|").map((r) => r.trim().toLowerCase());
 
   return txt.slice(2).reduce((acc, race) => {
-    const [m, f] = race.split("|").map(r => r.trim());
+    const [m, f] = race.split("|").map((r) => r.trim());
     acc.push({ [header[0]]: m, [header[1]]: f ? f : m });
     return acc;
   }, []);
@@ -57,8 +38,9 @@ function makeMessage() {
   const adj = rand(adjectives)[equip.gender].toLowerCase();
   const article = articles[gender];
 
-  return `\nDesenha ${article} **${kind} ${clazz} ${rand(verbs)} ${equip.name
-    } ${adj}**`;
+  return `\nDesenha ${article} **${kind} ${clazz} ${rand(verbs)} ${
+    equip.name
+  } ${adj}**`;
 }
 
 const verbs = [
@@ -85,27 +67,23 @@ const verbs = [
   "empunhando",
   "derrubando",
   "jogando",
-  "arremessando"
+  "arremessando",
 ];
 
 const positiveAnswer = [
   "De nada!",
   "Que isso amigo, foi um prazer te ajudar!",
   "Eu que agradeço",
-  "Incrivel! Bate aqui ✋"
+  "Incrivel! Bate aqui ✋",
 ];
 
 const negativeAnswer = [
   "Então vamos mais uma vez",
-  "Acho que você está inventando desculpas"
+  "Acho que você está inventando desculpas",
 ];
 
-client.on("message", msg => {
-
-  if (
-    msg.author.bot ||
-    !["653659853872693248", "657261309204758548"].includes(msg.channel.id)
-  ) {
+client.on("message", (msg) => {
+  if (msg.author.bot || !["760585029021204500"].includes(msg.channel.id)) {
     return;
   } else if (msg.content.toLocaleLowerCase().match(/não gostei/i)) {
     const answer = rand(negativeAnswer);
@@ -130,7 +108,7 @@ client.on("message", msg => {
     );
   } else if (msg.content.toLowerCase().match(/napolitano/i)) {
     msg.reply("Adoro! Com Flocos, melhor ainda!");
-  } else if (msg.content.startsWith('!roll')) {
+  } else if (msg.content.startsWith("!roll")) {
     const parsed = parse(msg.content.substr(5).trim());
     const result = pool(parsed);
     const sum = result.reduce((acc, e) => acc + e);
