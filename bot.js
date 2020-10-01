@@ -1,5 +1,6 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
+const http = require("http");
 const fs = require("fs");
 const path = require("path");
 const articles = { masculine: "um", feminine: "uma" };
@@ -9,6 +10,13 @@ const classes = read("classes.txt");
 const adjectives = read("adjectives.txt");
 const equipaments = read("equipaments.txt");
 const { parse, pool } = require("dicebag");
+
+const server = http.createServer((_, res) => {
+  res.writeHead(200);
+  res.end("ok");
+});
+
+server.listen(3000);
 
 client.on("ready", () => console.log(`Logged in as ${client.user.tag}!`));
 
