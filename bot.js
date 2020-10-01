@@ -12,8 +12,8 @@ const equipaments = read('equipaments.txt');
 const { parse, pool } = require('dicebag');
 
 const server = http.createServer((_, res) => {
-  res.writeHead(200);
-  res.end('ok');
+  const headers = { 'Content-Type': 'text/html; charset=utf-8' };
+  res.writeHead(200, headers).end('🍨 Estou funcionando!');
 });
 
 server.listen(3000);
