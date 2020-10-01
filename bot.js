@@ -18,7 +18,7 @@ const server = http.createServer((_, res) => {
 
 server.listen(3000);
 
-client.on('ready', () => console.log(`Logged in as ${client.user.tag}!`));
+client.once('ready', () => console.log(`Logged in as ${client.user.tag}!`));
 
 function rand(array) {
   return array[Math.floor(Math.random() * array.length)];
