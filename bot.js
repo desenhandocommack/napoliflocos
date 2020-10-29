@@ -90,6 +90,24 @@ const negativeAnswer = [
   'Acho que você está inventando desculpas',
 ];
 
+const compliments = [
+  'Que lindo, USER. Você fez sem ajuda?',
+  'Parabéns, USER, nunca vi desenho mais fofo que este!',
+  'Parabéns, USER, nunca vi desenho mais lindo que este!',
+  'Parabéns, USER, nunca vi desenho mais incrível que este!',
+  'Parabéns, USER, nunca vi desenho mais estonteante que este!',
+  'Parabéns, USER, nunca vi desenho mais magnífico que este!',
+  'Parabéns, USER, nunca vi desenho mais estupendo que este!',
+  'Parabéns, USER, nunca vi desenho mais perfeito que este!',
+  'Parabéns, USER, nunca vi desenho mais original que este!',
+  'Muito bem, USER, você está ficando cada dia melhor!',
+  'Muito bem, USER, você está se superando a cada dia!',
+  'Que incrível, USER! Você parece profissional!',
+  'Vou ser sincero com você, USER, este é o melhor que trabalho que já vi até hoje!',
+  'Olha, USER, já vi desenho bom, mas o seu supera todos!',
+  'Meus parabéns, USER, você tem um futuro brilhante!'
+]
+
 client.on('message', async (msg) => {
   if (msg.author.bot || !['760585029021204500'].includes(msg.channel.id)) {
     return;
@@ -116,6 +134,12 @@ client.on('message', async (msg) => {
     );
   } else if (msg.content.toLowerCase().match(/napolitano/i)) {
     msg.reply('Adoro! Com Flocos, melhor ainda!');
+  } else if (msg.content.startsWith('!elogio')) {
+    if (msg.attachments.size === 1) {
+      if (msg.attachments.first().url.match(/png|jpg|jpeg/)) {
+        msg.channel.send(rand(compliments).replace('USER', msg.author.toString()))
+      }
+    }
   } else if (msg.content.startsWith('!roll')) {
     const parsed = parse(msg.content.substr(5).trim());
     const result = pool(parsed);
