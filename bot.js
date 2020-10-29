@@ -136,7 +136,7 @@ client.on('message', async (msg) => {
     msg.reply('Adoro! Com Flocos, melhor ainda!');
   } else if (msg.content.startsWith('!elogio')) {
     if (msg.attachments.size === 1) {
-      if (msg.attachments.first().url.match(/png|jpg|jpeg/)) {
+      if (msg.attachments.first().url.match(/png|jpg|jpeg/i)) {
         msg.channel.send(rand(compliments).replace('USER', msg.author.toString()))
       }
     }
