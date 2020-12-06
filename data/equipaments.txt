@@ -8,7 +8,7 @@ uma Varinha                  | feminine
 uma Lanterna                 | feminine
 uma Pulseira                 | feminine
 uma Luva                     | feminine
-um Arco e Fecha              | masculine
+um Arco e Flecha             | masculine
 um Escudo                    | masculine
 um Machado                   | masculine
 um Martelo                   | masculine
