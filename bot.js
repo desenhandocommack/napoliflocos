@@ -103,7 +103,7 @@ const compliments = [
   'Muito bem, USER, você está ficando cada dia melhor!',
   'Muito bem, USER, você está se superando a cada dia!',
   'Que incrível, USER! Você parece profissional!',
-  'Vou ser sincero com você, USER, este é o melhor que trabalho que já vi até hoje!',
+  'Vou ser sincero com você, USER, este é o melhor trabalho que já vi até hoje!',
   'Olha, USER, já vi desenho bom, mas o seu supera todos!',
   'Meus parabéns, USER, você tem um futuro brilhante!'
 ]
