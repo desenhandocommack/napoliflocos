@@ -1,4 +1,5 @@
 const Discord = require('discord.js');
+const MessageAttachment = require('discord.js');
 const client = new Discord.Client();
 const http = require('http');
 const fs = require('fs');
@@ -111,6 +112,15 @@ const compliments = [
 client.on('message', async (msg) => {
   if (msg.author.bot || !['760585029021204500'].includes(msg.channel.id)) {
     return;
+  } else if (msg.content.startsWith('t') && msg.member.roles.cache.find(r => r.name === '🛡ADM')) {
+      const ch = client.channels.cache.find(ch => ch.id === '760585029021204500')
+      const MESSAGES = require('./data/channel-welcome/messages');
+      MESSAGES.forEach(m => {
+        ch.send({ files: [m.header] }).then(() => {
+          console.log('deu')
+          m.messages.forEach(x => ch.send(x === '' ? '⠀' : x))
+        });
+      })
   } else if (msg.content.toLocaleLowerCase().match(/não gostei/i)) {
     const answer = rand(negativeAnswer);
 
