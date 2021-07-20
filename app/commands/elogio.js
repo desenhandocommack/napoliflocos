@@ -22,8 +22,11 @@ module.exports = {
   name: 'elogio',
   description: '',
   execute(msg) {
-    if (msg.attachments.size === 1 && msg.attachments.first().url.match(/png|jpg|jpeg/i)) {
-      msg.channel.send(rand(compliments).replace('USER', msg.author.toString()));
+    const hasAttachments = msg.attachments.size === 1;
+
+    if (hasAttachments && msg.attachments.first().url.match(/png|jpg|jpeg/i)) {
+      const author = msg.author.toString();
+      msg.channel.send(rand(compliments).replace('USER', author));
     }
   },
 };

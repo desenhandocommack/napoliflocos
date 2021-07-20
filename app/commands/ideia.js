@@ -37,7 +37,8 @@ const verbs = [
 ];
 
 function read(filename) {
-  const txt = fs.readFileSync(path.join(__dirname, '..', '..', 'data', filename), { encoding: 'utf8' }).split('\n');
+  const data = path.join(__dirname, '..', '..', 'data', filename);
+  const txt = fs.readFileSync(data, { encoding: 'utf8' }).split('\n');
 
   const header = txt[0].split('|').map((r) => r.trim().toLowerCase());
 
@@ -55,8 +56,9 @@ function makeMessage() {
   const equip = rand(equipaments);
   const adj = rand(adjectives)[equip.gender].toLowerCase();
   const article = articles[gender];
+  const verb = rand(verbs);
 
-  return `\nDesenha ${article} **${kind} ${clazz} ${rand(verbs)} ${equip.name} ${adj}**`;
+  return `\nDesenha ${article} **${kind} ${clazz} ${verb} ${equip.name} ${adj}**`;
 }
 
 module.exports = {
