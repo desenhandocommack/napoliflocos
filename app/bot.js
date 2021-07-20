@@ -1,7 +1,7 @@
 const http = require('http');
 const fs = require('fs');
-const path = require('path');
 const { Client, Collection } = require('discord.js');
+const path = require('path');
 const client = new Client();
 const commands = new Collection();
 const commandsPath = path.join(__dirname, 'commands');
