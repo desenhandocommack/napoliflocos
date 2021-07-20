@@ -1,15 +1,16 @@
 const Discord = require('discord.js');
-const client = new Discord.Client();
 const http = require('http');
 const fs = require('fs');
+const diceUtils = require('dice-utils');
 const path = require('path');
+
+const client = new Discord.Client();
 const articles = { masculine: 'um', feminine: 'uma' };
 const genders = ['masculine', 'feminine'];
 const races = read('races.txt');
 const classes = read('classes.txt');
 const adjectives = read('adjectives.txt');
 const equipaments = read('equipaments.txt');
-const { parse, pool } = require('dicebag');
 
 http.createServer((_, res) => res.end('Estou funcionando!')).listen(3000);
 
@@ -117,10 +118,9 @@ client.on('message', async (msg) => {
 
   // rolador de dados
   else if (msg.content.startsWith('!roll')) {
-    const parsed = parse(msg.content.substr(5).trim());
-    const result = pool(parsed);
-    const sum = result.reduce((acc, e) => acc + e);
-    msg.reply(`${JSON.stringify(result)} (${sum})`);
+    const { roll } = diceUtils;
+    const parsed = roll(msg.content.substr(5).trim());
+    msg.reply(`${JSON.stringify(parsed.results)} (${parsed.total})`);
   }
 
   // mensagens simples

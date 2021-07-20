@@ -7,7 +7,7 @@
     "start": "node -r dotenv/config bot.js"
   },
   "dependencies": {
-    "dicebag": "^0.1.2",
+    "dice-utils": "^1.3.3",
     "discord.js": "^12.5.3"
   },
   "devDependencies": {
