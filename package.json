@@ -5,13 +5,14 @@
   "main": "bot.js",
   "private": true,
   "scripts": {
-    "start": "node bot.js"
+    "start": "node -r dotenv/config bot.js"
   },
   "dependencies": {
     "dicebag": "^0.1.2",
-    "discord.js": "^12.3.1"
+    "discord.js": "^12.5.3"
   },
   "devDependencies": {
+    "dotenv": "^10.0.0",
     "eslint": "^7.10.0"
   }
 }
