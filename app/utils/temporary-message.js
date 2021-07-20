@@ -1,4 +1,4 @@
-const options = { timeout: 1000 * 60 * 60 };
+const options = { timeout: 1000 * 60 * 60 * 12 };
 
 function send(message, content) {
   message.channel.send(content).then((m) => m.delete(options));
