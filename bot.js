@@ -20,9 +20,7 @@ function rand(array) {
 }
 
 function read(filename) {
-  const txt = fs
-    .readFileSync(path.join(__dirname, 'data', filename), { encoding: 'utf8' })
-    .split('\n');
+  const txt = fs.readFileSync(path.join(__dirname, 'data', filename), { encoding: 'utf8' }).split('\n');
 
   const header = txt[0].split('|').map((r) => r.trim().toLowerCase());
 
@@ -41,9 +39,7 @@ function makeMessage() {
   const adj = rand(adjectives)[equip.gender].toLowerCase();
   const article = articles[gender];
 
-  return `\nDesenha ${article} **${kind} ${clazz} ${rand(verbs)} ${
-    equip.name
-  } ${adj}**`;
+  return `\nDesenha ${article} **${kind} ${clazz} ${rand(verbs)} ${equip.name} ${adj}**`;
 }
 
 const verbs = [
@@ -73,17 +69,9 @@ const verbs = [
   'arremessando',
 ];
 
-const positiveAnswer = [
-  'De nada!',
-  'Que isso amigo, foi um prazer te ajudar!',
-  'Eu que agradeço',
-  'Incrivel! Bate aqui ✋',
-];
+const positiveAnswer = ['De nada!', 'Que isso amigo, foi um prazer te ajudar!', 'Eu que agradeço', 'Incrivel! Bate aqui ✋'];
 
-const negativeAnswer = [
-  'Então vamos mais uma vez',
-  'Acho que você está inventando desculpas',
-];
+const negativeAnswer = ['Então vamos mais uma vez', 'Acho que você está inventando desculpas'];
 
 const compliments = [
   'Que lindo, USER. Você fez sem ajuda?',
@@ -104,53 +92,27 @@ const compliments = [
 ];
 
 client.on('message', async (msg) => {
-  if (msg.author.bot || !['760585029021204500'].includes(msg.channel.id)) {
+  if (msg.author.bot || !['867104422671417394'].includes(msg.channel.id)) {
     return;
-  } else if (
-    msg.content.startsWith('t') &&
-    msg.member.roles.cache.find((r) => r.name === '🛡ADM')
-  ) {
-    const ch = client.channels.cache.find(
-      (ch) => ch.id === '760585029021204500'
-    );
+  } else if (msg.content.startsWith('t') && msg.member.roles.cache.find((r) => r.name === '🛡ADM')) {
+    const ch = client.channels.cache.find((ch) => ch.id === '867104422671417394');
     const MESSAGES = require('./data/channel-welcome/messages');
-    MESSAGES.forEach((m) => {
-      ch.send({ files: [m.header] }).then(() => {
-        console.log('deu');
-        m.messages.forEach((x) => ch.send(x === '' ? '⠀' : x));
-      });
-    });
+    MESSAGES.forEach((m) => ch.send({ files: [m.header] }).then(() => m.messages.forEach((x) => ch.send(x === '' ? '⠀' : x))));
   } else if (msg.content.toLocaleLowerCase().match(/não gostei/i)) {
     const answer = rand(negativeAnswer);
-
-    if (answer === 'Então vamos mais uma vez') {
-      msg.reply(`${answer}${makeMessage()}`);
-    } else {
-      msg.reply(answer);
-    }
+    msg.reply(`${answer}${answer === negativeAnswer[0] ? makeMessage() : ''}`);
   } else if (msg.content.toLocaleLowerCase().match(/obrigado|obg|valeu/i)) {
     msg.reply(rand(positiveAnswer));
   } else if (msg.content.match(/(preciso|sem).*id[eé]ia/i)) {
     msg.reply(makeMessage());
-  } else if (
-    msg.content.toLowerCase().match(/napolitano/i) &&
-    msg.content.includes('flocos')
-  ) {
+  } else if (msg.content.toLowerCase().match(/napolitano/i) && msg.content.includes('flocos')) {
     msg.reply('Hummm... Excelente combinação!');
   } else if (msg.content.toLowerCase().match(/flocos/i)) {
-    msg.reply(
-      'Sabe o que vai bem com sorvete de Flocos? Isso mesmo, um Napolitano!'
-    );
+    msg.reply('Sabe o que vai bem com sorvete de Flocos? Isso mesmo, um Napolitano!');
   } else if (msg.content.toLowerCase().match(/napolitano/i)) {
     msg.reply('Adoro! Com Flocos, melhor ainda!');
-  } else if (msg.content.startsWith('!elogio')) {
-    if (msg.attachments.size === 1) {
-      if (msg.attachments.first().url.match(/png|jpg|jpeg/i)) {
-        msg.channel.send(
-          rand(compliments).replace('USER', msg.author.toString())
-        );
-      }
-    }
+  } else if (msg.content.startsWith('!elogio') && msg.attachments.size === 1 && msg.attachments.first().url.match(/png|jpg|jpeg/i)) {
+    msg.channel.send(rand(compliments).replace('USER', msg.author.toString()));
   } else if (msg.content.startsWith('!roll')) {
     const parsed = parse(msg.content.substr(5).trim());
     const result = pool(parsed);
