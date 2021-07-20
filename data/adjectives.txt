@@ -23,35 +23,21 @@ Luminoso                     | Luminosa
 Elétrico                     | Elétrica
 Assombroso                   | Assombrosa
 Queimado                     | Queimada
-Grande                       | Grande
 Flamejante                   | Flamejante
 Brilhante                    | Brilhante
 Sombrio                      | Sombria
 Sinistro                     | Sinistra
-Infernal                     | Infernal
 Tecnológico                  | Tecnológica
-Futurista                    | Futurista
 Apertado                     | Apertada
 Macabro                      | Macabra
-Espectral                    | Espectral
 Estranho                     | Estranha
 Florido                      | Florida
 Robusto                      | Robusta
 Elegante                     | Elegante
 Glacial                      | Glacial
 Petrificado                  | Petrificada
-Doce                         | Doce
-Ancestral                    | Ancestral
-Espacial                     | Espacial
 Motorizado                   | Motorizada
-Mutante                      | Mutante
 Duro                         | Dura
-Mole                         | Mole
-Angelical                    | Angelical
-Alegre                       | Alegre
-Cyberpunk                    | Cyberpunk
-Celestial                    | Celestial
-Chique                       | Chique
 Delicado                     | Delicada
 Criativo                     | Criativa
 Engenhoso                    | Engenhosa
@@ -70,7 +56,6 @@ Valioso                      | Valiosa
 Horrível                     | Horrível
 Desgastado                   | Desgastada
 Pobre                        | Pobre
-Natural                      | Natural
 Estúpido                     | Estúpida
 Amaldiçoado                  | Amaldiçoada
 Cheio                        | Cheia
@@ -80,23 +65,38 @@ Falso                        | Falsa
 Vazio                        | Vazia
 Largo                        | Larga
 Fino                         | Fina
-Frágil                       | Frágil
 Delicado                     | Delicada
 Áspero                       | Áspera
 Feio                         | Feia
-Gigante                      | Gigante
 Dourado                      | Dourada
 Antigo                       | Antiga
 Distorcido                   | Distorcida
-Irregular                    | Irregular
-Tribal                       | Tribal
 Vermelho                     | Vermelha
 Asiático                     | Asiática
 Americano                    | Americana
 Céltico                      | Céltica
 Indígena                     | Indígena
 Grego                        | Grega
-Árabe                        | Árabe
 Mexicano                     | Mexicana
 Africano                     | Africana
 Egípcio                      | Egípcia
+Tribal
+Árabe
+Grande
+Irregular
+Gigante
+Frágil
+Natural
+Doce
+Ancestral
+Espacial
+Mutante
+Mole
+Angelical
+Alegre
+Cyberpunk
+Celestial
+Chique
+Infernal
+Futurista
+Espectral

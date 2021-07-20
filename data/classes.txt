@@ -17,9 +17,48 @@ Shinobi                      | Kunoichi
 Infiltrador                  | Infiltradora
 Bárbaro                      | Bárbara
 Ladino                       | Ladina
+Feiticeiro                   | Feiticeira
+Mago do Tempo                | Maga do Tempo
+Animago                      | Animaga
+Metamorfo                    | Metamorfa
+Invocador                    | Invocadora
+Bardo                        | Barda
+Trapaceiro                   | Trapaceira
+Camponês                     | Camponesa
+Templário                    | Templária
+Assassino                    | Assassina
+Guerreiro                    | Guerreira
+Gladiador                    | Gladiadora
+Clérigo                      | Clériga
+Sacerdote                    | Sacerdotisa
+Engenhoqueiro                | Engenhoqueira
+Cigano                       | Cigana
+Antipaladino                 | Antipaladina
+Domador de Feras             | Domadora de Feras
+Artesão de Gollems           | Artesã de Gollems
+Campeão                      | Campeã
+Lutador                      | Lutadora
+Guardião                     | Guardiã
+Caçador                      | Caçadora
+Dobrador                     | Dobradora
 Pirata
 Piromante
 Necromante
 Espadachim
 Samurai
 Ranger
+Arcanista
+Elementalista
+Druida
+Acrobata
+Glamber (Cartista)
+Rogue
+Thief
+Viking
+Menestrel
+Berserker
+Monge
+Alquimista
+Xamã
+Warlock
+Infernalista

@@ -16,12 +16,73 @@ Meio Elfo                    | Meio Elfa
 Orc                          | Orquisa
 Meio Orc                     | Meio Orquisa
 Vampiro                      | Vampira
-Animatronic                  | Animatronic
 Ogro                         | Ogra
-Furry                        | Furry
+Marinho                      | Marinha
+Homem-urso                   | Mulher-urso
+Dracôniano                   | Dracôniana
+Sátiro                       | Sátira
+Morto-vivo                   | Morta-viva
+Gênio                        | Gênia
+Centauro                     | Centaura
+Dragotauro                   | Dragotaura
+Minotauro                    | Minotaura
+Elfo do Mar                  | Elfa do Mar
+Anjo                         | Anja
+Tritão                       | Sereia  
+Animatronic
+Furry
 Duende
 Replicante
 Hobbit
 Zumbi
 Robô
 Kobold
+Fada
+Sun Wukong
+Eladrin
+Saci
+Thri-Kreen's
+Warforged
+Selvagem
+Khajiit
+Ninfa
+Wendigo
+Automatoi
+Hadozee
+Lobisomem
+Gnoll
+Shauagin
+Gabirú
+Wemics
+Ooogie Boogie
+Goblin
+Ganeshins
+Drow
+Draenei
+Ghoul
+Espectro
+Bugbear
+Golias
+Naga
+Troll
+Vanir
+Doppelganger
+Ifrit
+Gigante
+Troglodyte
+Hobgoblin
+Yuan-ti
+Meio Ent
+Falmer
+Bosmer
+Tiefling
+Lizardman
+Trasgo
+Gorka
+Pandaren
+Crocoman
+Ilumians
+Turto
+Ravant
+Frogman
+Meio Demônio
