@@ -94,30 +94,42 @@ const compliments = [
 client.on('message', async (msg) => {
   if (msg.author.bot || !['867104422671417394'].includes(msg.channel.id)) {
     return;
-  } else if (msg.content.startsWith('t') && msg.member.roles.cache.find((r) => r.name === '🛡ADM')) {
-    const ch = client.channels.cache.find((ch) => ch.id === '867104422671417394');
-    const MESSAGES = require('./data/channel-welcome/messages');
-    MESSAGES.forEach((m) => ch.send({ files: [m.header] }).then(() => m.messages.forEach((x) => ch.send(x === '' ? '⠀' : x))));
-  } else if (msg.content.toLocaleLowerCase().match(/não gostei/i)) {
+  }
+
+  // gerador de ideias
+  else if (msg.content.toLocaleLowerCase().match(/não gostei/i)) {
     const answer = rand(negativeAnswer);
     msg.reply(`${answer}${answer === negativeAnswer[0] ? makeMessage() : ''}`);
   } else if (msg.content.toLocaleLowerCase().match(/obrigado|obg|valeu/i)) {
     msg.reply(rand(positiveAnswer));
   } else if (msg.content.match(/(preciso|sem).*id[eé]ia/i)) {
     msg.reply(makeMessage());
-  } else if (msg.content.toLowerCase().match(/napolitano/i) && msg.content.includes('flocos')) {
+  }
+
+  // outros
+  else if (msg.content.startsWith('!elogio') && msg.attachments.size === 1 && msg.attachments.first().url.match(/png|jpg|jpeg/i)) {
+    msg.channel.send(rand(compliments).replace('USER', msg.author.toString()));
+  } else if (msg.content.startsWith('t') && msg.member.roles.cache.find((r) => r.name === '🛡ADM')) {
+    const ch = client.channels.cache.find((ch) => ch.id === '867104422671417394');
+    const MESSAGES = require('./data/channel-welcome/messages');
+    MESSAGES.forEach((m) => ch.send({ files: [m.header] }).then(() => m.messages.forEach((x) => ch.send(x === '' ? '⠀' : x))));
+  }
+
+  // rolador de dados
+  else if (msg.content.startsWith('!roll')) {
+    const parsed = parse(msg.content.substr(5).trim());
+    const result = pool(parsed);
+    const sum = result.reduce((acc, e) => acc + e);
+    msg.reply(`${JSON.stringify(result)} (${sum})`);
+  }
+
+  // mensagens simples
+  else if (msg.content.toLowerCase().match(/napolitano/i) && msg.content.includes('flocos')) {
     msg.reply('Hummm... Excelente combinação!');
   } else if (msg.content.toLowerCase().match(/flocos/i)) {
     msg.reply('Sabe o que vai bem com sorvete de Flocos? Isso mesmo, um Napolitano!');
   } else if (msg.content.toLowerCase().match(/napolitano/i)) {
     msg.reply('Adoro! Com Flocos, melhor ainda!');
-  } else if (msg.content.startsWith('!elogio') && msg.attachments.size === 1 && msg.attachments.first().url.match(/png|jpg|jpeg/i)) {
-    msg.channel.send(rand(compliments).replace('USER', msg.author.toString()));
-  } else if (msg.content.startsWith('!roll')) {
-    const parsed = parse(msg.content.substr(5).trim());
-    const result = pool(parsed);
-    const sum = result.reduce((acc, e) => acc + e);
-    msg.reply(`${JSON.stringify(result)} (${sum})`);
   }
 });
 
