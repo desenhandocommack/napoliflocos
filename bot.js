@@ -12,12 +12,7 @@ const adjectives = read('adjectives.txt');
 const equipaments = read('equipaments.txt');
 const { parse, pool } = require('dicebag');
 
-const server = http.createServer((_, res) => {
-  const headers = { 'Content-Type': 'text/html; charset=utf-8' };
-  res.writeHead(200, headers).end('🍨 Estou funcionando!');
-});
-
-server.listen(3000);
+http.createServer((_, res) => res.end('Estou funcionando!')).listen(3000);
 
 client.once('ready', () => console.log(`Logged in as ${client.user.tag}!`));
 
@@ -106,21 +101,26 @@ const compliments = [
   'Que incrível, USER! Você parece profissional!',
   'Vou ser sincero com você, USER, este é o melhor trabalho que já vi até hoje!',
   'Olha, USER, já vi desenho bom, mas o seu supera todos!',
-  'Meus parabéns, USER, você tem um futuro brilhante!'
-]
+  'Meus parabéns, USER, você tem um futuro brilhante!',
+];
 
 client.on('message', async (msg) => {
   if (msg.author.bot || !['760585029021204500'].includes(msg.channel.id)) {
     return;
-  } else if (msg.content.startsWith('t') && msg.member.roles.cache.find(r => r.name === '🛡ADM')) {
-      const ch = client.channels.cache.find(ch => ch.id === '760585029021204500')
-      const MESSAGES = require('./data/channel-welcome/messages');
-      MESSAGES.forEach(m => {
-        ch.send({ files: [m.header] }).then(() => {
-          console.log('deu')
-          m.messages.forEach(x => ch.send(x === '' ? '⠀' : x))
-        });
-      })
+  } else if (
+    msg.content.startsWith('t') &&
+    msg.member.roles.cache.find((r) => r.name === '🛡ADM')
+  ) {
+    const ch = client.channels.cache.find(
+      (ch) => ch.id === '760585029021204500'
+    );
+    const MESSAGES = require('./data/channel-welcome/messages');
+    MESSAGES.forEach((m) => {
+      ch.send({ files: [m.header] }).then(() => {
+        console.log('deu');
+        m.messages.forEach((x) => ch.send(x === '' ? '⠀' : x));
+      });
+    });
   } else if (msg.content.toLocaleLowerCase().match(/não gostei/i)) {
     const answer = rand(negativeAnswer);
 
@@ -147,7 +147,9 @@ client.on('message', async (msg) => {
   } else if (msg.content.startsWith('!elogio')) {
     if (msg.attachments.size === 1) {
       if (msg.attachments.first().url.match(/png|jpg|jpeg/i)) {
-        msg.channel.send(rand(compliments).replace('USER', msg.author.toString()))
+        msg.channel.send(
+          rand(compliments).replace('USER', msg.author.toString())
+        );
       }
     }
   } else if (msg.content.startsWith('!roll')) {
