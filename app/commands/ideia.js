@@ -1,6 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const rand = require('../utils/rand');
+const { reply } = require('../utils/temporary-message');
 
 const articles = { masculine: 'um', feminine: 'uma' };
 const genders = ['masculine', 'feminine'];
@@ -65,6 +66,6 @@ module.exports = {
   name: 'ideia',
   description: 'Gera ideia de personagens',
   execute(msg) {
-    msg.reply(makeMessage());
+    reply(msg, makeMessage());
   },
 };

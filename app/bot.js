@@ -6,6 +6,7 @@ const client = new Client();
 const commands = new Collection();
 const commandsPath = path.join(__dirname, 'commands');
 const prefix = '!';
+const { options } = require('./utils/temporary-message');
 
 http.createServer((_, res) => res.end('Estou funcionando!')).listen(3000);
 
@@ -26,6 +27,8 @@ client
     ) {
       const args = msg.content.slice(prefix.length).trim().split(/ +/);
       const command = args.shift().toLowerCase();
+
+      msg.delete(options);
 
       if (commands.has(command)) {
         try {

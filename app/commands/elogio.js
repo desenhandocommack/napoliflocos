@@ -1,4 +1,5 @@
 const rand = require('../utils/rand');
+const { send } = require('../utils/temporary-message');
 
 const compliments = [
   'Que lindo, USER. Você fez sem ajuda?',
@@ -26,7 +27,7 @@ module.exports = {
 
     if (hasAttachments && msg.attachments.first().url.match(/png|jpg|jpeg/i)) {
       const author = msg.author.toString();
-      msg.channel.send(rand(compliments).replace('USER', author));
+      send(msg, rand(compliments).replace('USER', author));
     }
   },
 };
