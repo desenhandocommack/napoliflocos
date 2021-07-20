@@ -2,7 +2,6 @@
   "name": "napoliflocos",
   "version": "0.0.1",
   "description": "A simple Discord bot",
-  "main": "bot.js",
   "private": true,
   "scripts": {
     "start": "node -r dotenv/config bot.js"
