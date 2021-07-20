@@ -1,5 +1,4 @@
 const Discord = require('discord.js');
-const MessageAttachment = require('discord.js');
 const client = new Discord.Client();
 const http = require('http');
 const fs = require('fs');
