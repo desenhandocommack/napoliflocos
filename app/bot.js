@@ -1,7 +1,8 @@
 const { createServer } = require('http');
 const { readdirSync } = require('fs');
 const { join } = require('path');
-const { Client, Collection } = require('discord.js');
+const { Client, Collection, TextChannel } = require('discord.js');
+const deleter = require('./utils/deleter');
 
 const client = new Client();
 const commands = new Collection();
@@ -16,7 +17,11 @@ readdirSync(commandsPath).forEach((file) => {
 });
 
 client
-  .once('ready', () => console.log(`${client.user.tag} is logged!`))
+  .once('ready', async () => {
+    console.log(`${client.user.tag} is logged!`);
+
+    deleter(client);
+  })
   .on('message', async (msg) => {
     if (
       !msg.author.bot &&
