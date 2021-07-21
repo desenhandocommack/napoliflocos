@@ -1,19 +1,20 @@
-const http = require('http');
-const fs = require('fs');
+const { createServer } = require('http');
+const { readdirSync } = require('fs');
+const { join } = require('path');
 const { Client, Collection } = require('discord.js');
-const path = require('path');
+
 const client = new Client();
 const commands = new Collection();
-const commandsPath = path.join(__dirname, 'commands');
+const commandsPath = join(__dirname, 'commands');
 const prefix = '!';
 const { options } = require('./utils/temporary-message');
 
-http.createServer((_, res) => res.end('Estou funcionando!')).listen(3000);
+createServer((_, res) => res.end('Estou funcionando!')).listen(3000);
 
-fs.readdirSync(commandsPath)
+readdirSync(commandsPath)
   .filter((file) => file.endsWith('.js'))
   .forEach((file) => {
-    const command = require(path.join(commandsPath, file));
+    const command = require(join(commandsPath, file));
     commands.set(command.name, command);
   });
 
