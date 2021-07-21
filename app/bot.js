@@ -18,7 +18,7 @@ fs.readdirSync(commandsPath)
   });
 
 client
-  .once('ready', () => console.log(`Logged in as ${client.user.tag}!`))
+  .once('ready', () => console.log(`${client.user.tag} is logged!`))
   .on('message', async (msg) => {
     if (
       !msg.author.bot &&
