@@ -10,12 +10,10 @@ const prefix = '!';
 
 createServer((_, res) => res.end('Estou funcionando!')).listen(3000);
 
-readdirSync(commandsPath)
-  .filter((file) => file.endsWith('.js'))
-  .forEach((file) => {
-    const command = require(join(commandsPath, file));
-    commands.set(command.name, command);
-  });
+readdirSync(commandsPath).forEach((file) => {
+  const command = require(join(commandsPath, file));
+  commands.set(command.name, command);
+});
 
 client
   .once('ready', () => console.log(`${client.user.tag} is logged!`))
