@@ -23,7 +23,7 @@ client
     if (
       !msg.author.bot &&
       msg.content.startsWith(prefix) &&
-      ['867104422671417394'].includes(msg.channel.id)
+      msg.channel.name === '🍧napoliflocos'
     ) {
       const args = msg.content.slice(prefix.length).trim().split(/ +/);
       const command = args.shift().toLowerCase();
