@@ -26,7 +26,7 @@ module.exports = {
 
     if (hasAttachments && msg.attachments.first().url.match(/png|jpg|jpeg/i)) {
       const author = msg.author.toString();
-      msg.send(rand(compliments).replace('USER', author));
+      msg.channel.send(rand(compliments).replace('USER', author));
     }
   },
 };
