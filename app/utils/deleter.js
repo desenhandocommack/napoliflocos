@@ -1,7 +1,6 @@
 const { TextChannel } = require('discord.js');
 
-const limit = 1000 * 60 * 60 * 1;
-// const limit = 1000 * 60 * 60 * 24 * 7;
+const limit = 1000 * 60 * 60 * 24 * 7;
 
 function deleteFn(client) {
   const now = Date.now();
