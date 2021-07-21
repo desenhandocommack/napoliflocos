@@ -4,8 +4,7 @@
   "description": "A simple Discord bot",
   "private": true,
   "scripts": {
-    "start": "node -r dotenv/config app/bot.js",
-    "serve": "node app/bot.js"
+    "start": "node -r dotenv/config app/bot.js"
   },
   "dependencies": {
     "dice-utils": "^1.3.3",
