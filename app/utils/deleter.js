@@ -15,7 +15,7 @@ function deleteFn(client) {
           (m) => !m.pinned && now - m.createdTimestamp > limit
         );
 
-        c.bulkDelete(filtred);
+        c.bulkDelete(filtred).catch((e) => console.log('Error', e.message));
       }
     });
 }
