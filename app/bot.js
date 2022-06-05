@@ -1,10 +1,10 @@
 const { createServer } = require('http');
 const { readdirSync } = require('fs');
 const { join } = require('path');
-const { Client, Collection, TextChannel } = require('discord.js');
+const { Client, Collection, Intents } = require('discord.js');
 const deleter = require('./utils/deleter');
 
-const client = new Client();
+const client = new Client({intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES]});
 const commands = new Collection();
 const commandsPath = join(__dirname, 'commands');
 const prefix = '!';
@@ -22,7 +22,7 @@ client
 
     deleter(client);
   })
-  .on('message', async (msg) => {
+  .on('messageCreate', async (msg) => {
     if (
       !msg.author.bot &&
       msg.content.startsWith(prefix) &&
@@ -35,8 +35,7 @@ client
         try {
           commands.get(command).execute(msg, args);
         } catch (error) {
-          console.error(error);
-          msg.reply('Houve um erro!');
+          msg.reply('Houve um erro!').then(() => console.error(error));
         }
       }
     }
