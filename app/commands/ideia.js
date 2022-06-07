@@ -9,30 +9,7 @@ const classes = read('classes.txt');
 const equipaments = read('equipaments.txt');
 
 const verbs = [
-  'fazendo',
-  'criando',
-  'construindo',
-  'limpando',
-  'quebrando',
-  'montando',
-  'xingando',
-  'gritando com',
-  'brincando com',
-  'chorando com',
-  'sorrindo com',
-  'correndo com',
-  'andando com',
-  'caindo com',
-  'pulando com',
-  'saltando com',
-  'falando com',
-  'pensando em',
   'com',
-  'segurando',
-  'empunhando',
-  'derrubando',
-  'jogando',
-  'arremessando',
 ];
 
 function read(filename) {
