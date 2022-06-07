@@ -1,64 +1,91 @@
 Masculine                    | Feminine
 -----------------------------|--------------------------------------------------
 Arqueiro                     | Arqueira
-Ferreiro                     | Ferreira
-Padeiro                      | Padeira
-Mensageiro                   | Mensageira
-Besteiro                     | Besteira
-Lanceiro                     | Lanceira
-Mago                         | Maga
-Arqui Mago                   | Arqui Maga
-Paladino                     | Paladina
-Mago das Chamas              | Maga das Chamas
-Psionico                     | Psionica
-Ilusionista                  | Ilusionista
-Mágico                       | Mágica
-Shinobi                      | Kunoichi
-Infiltrador                  | Infiltradora
-Bárbaro                      | Bárbara
-Ladino                       | Ladina
-Feiticeiro                   | Feiticeira
-Mago do Tempo                | Maga do Tempo
-Animago                      | Animaga
-Metamorfo                    | Metamorfa
-Invocador                    | Invocadora
-Bardo                        | Barda
-Trapaceiro                   | Trapaceira
-Camponês                     | Camponesa
-Templário                    | Templária
 Assassino                    | Assassina
-Guerreiro                    | Guerreira
-Gladiador                    | Gladiadora
-Clérigo                      | Clériga
-Sacerdote                    | Sacerdotisa
-Engenhoqueiro                | Engenhoqueira
-Cigano                       | Cigana
-Antipaladino                 | Antipaladina
-Domador de Feras             | Domadora de Feras
+Arqueólogo                   | Arqueóloga
 Artesão de Gollems           | Artesã de Gollems
-Campeão                      | Campeã
-Lutador                      | Lutadora
-Guardião                     | Guardiã
+Atleta                       | Atleta
+Astronauta                   | Astronauta
+Açougueiro                   | Açougueira
+Aviador                      | Aviadora
+Ancião                       | Anciã
+Bárbaro                      | Bárbara
+Bibliotecário                | Bibliotecária
+Bruxo                        | Bruxa
+Bardo                        | Barda
+Cientista                    | Cientista
+Capitão                      | Capitã 
+Camponês                     | Camponesa
+Cigano                       | Cigana
+Comerciante                  | Comerciante
 Caçador                      | Caçadora
+Cozinheiro                   | Cozinheira
+Costureiro                   | Costureira
+Caçador                      | Caçadora
+Curandeiro                   | Curandeira
+Colecionador                 | Colecionadora
+Catador                      | Catadora
 Dobrador                     | Dobradora
-Pirata
-Piromante
-Necromante
-Espadachim
-Samurai
-Ranger
-Arcanista
-Elementalista
-Druida
-Acrobata
-Glamber (Cartista)
-Rogue
-Thief
-Viking
-Menestrel
-Berserker
-Monge
-Alquimista
-Xamã
-Warlock
-Infernalista
+Dançarino                    | Dançarina
+Detetive                     | Detetive
+Druida                       | Druida
+Do Lar                       | Do Lar
+Engenhoqueiro                | Engenhoqueira
+Estudante                    | Estudante
+Enfermeiro                   | Enfermeira
+Feiticeiro                   | Feiticeira
+Forasteiro                   | Forasteira
+Florista                     | Florista
+Fotógrafo                    | Fotógrafo
+Ferreiro                     | Ferreira
+Fazendeiro                   | Fazendeira
+Feirante                     | Feirante
+Guerreiro                    | Guerreira
+Guardião                     | Guardiã
+Gamer                        | Gamer
+Geólogo                      | Geóloga
+General                      | General
+Guardião                     | Guardiã
+Gari                         | Gari
+Hipster                      | Hipster
+Lutador                      | Lutadora
+Ladino                       | Ladina
+Mordomo                      | Governanta
+Mago                         | Maga
+Mágico                       | Mágica
+Metamorfo                    | Metamorfa
+Mecânico                     | Mecânica
+Motoqueiro                   | Motoqueira
+Maquiador                    | Maquiadora
+Marinheiro                   | Marinheira
+Merendeiro                   | Merendeira
+Monge                        | Monge
+Navegador                    | Navegadora
+Nômade                       | Nômade
+Nerd                         | Nerd
+Pipoqueiro                   | Pipoqueira
+Policial                     | Policial
+Palhaço                      | Palhaça
+Prisioneiro                  | Prisioneira
+Padre                        | Freira
+Professor                    | Professora
+Padeiro                      | Padeira
+Pirata                       | Pirata
+Samurai                      | Samurai
+Segurança                    | Segurança
+Sentinela                    | Sentinela
+Taverneiro                   | Taverneira
+Turista                      | Turista
+Viajante                     | Viajante                     
+Viking                       | Viking
+Vendedor                     | Vendedora
+
+
+
+
+
+
+
+
+
+
