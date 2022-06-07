@@ -1,122 +1,72 @@
 Name                         | Gender
 -----------------------------|--------------------------------------------------
-uma Espada                   | feminine
-uma Bolsa                    | feminine
-uma Alabarda                 | feminine
 uma Adaga                    | feminine
-uma Varinha                  | feminine
-uma Lanterna                 | feminine
-uma Pulseira                 | feminine
-uma Luva                     | feminine
-uma Adaga com mola           | feminine                                   
-uma Agulha                   | feminine                           
-uma Bota com lâmina          | feminine                                    
-uma Espada curta             | feminine                                 
-uma Manopla                  | feminine                            
-uma Lança                    | feminine                          
-uma Clava                    | feminine                          
-uma Maça                     | feminine                         
-uma Alfange                  | feminine                            
-uma Balestra                 | feminine                             
-uma Azagaia                  | feminine                            
-uma Balista                  | feminine                            
-uma Bazuca                   | feminine                           
-uma Besta de Mão             | feminine                                 
-uma Besta de Repetição       | feminine                                       
-uma Besta Leve               | feminine                               
-uma Besta Pesada             | feminine                                 
-uma Bola de gu-on            | feminine                                  
-uma Boladeira                | feminine                              
-uma Bolsa de Cola            | feminine                                  
-uma Catapulta-de-braço       | feminine                                       
-uma Cestus                   | feminine                           
-uma Cimitarra                | feminine                              
-uma Clava                    | feminine                          
-uma Corrente com Cravos      | feminine                                        
-uma Espada Bastarda          | feminine                                    
-uma Espada de Lâminas Duplas | feminine                                             
-uma Espada Grande            | feminine                                  
-uma Espada Longa             | feminine                                 
-uma Espada Táurica           | feminine                                   
-uma Foice                    | feminine                          
-uma Zarabatana               | feminine                               
-uma Funda                    | feminine                          
-uma Garra Feroz              | feminine                                
-uma Girolette                | feminine                              
-uma Granada                  | feminine                            
-uma Katana                   | feminine                           
-uma Kusari-gama              | feminine                                
-uma Laço                     | feminine                         
-uma Lança                    | feminine                          
-uma Maça-Estrela             | feminine                                 
-uma Maça de Guerra           | feminine                                   
-uma Machadinha               | feminine                               
-uma Shuriken                 | feminine                             
-uma vara                     | feminine                         
-uma Túnica Calamarina        | feminine                                      
-uma Couraça de Bronze        | feminine                                      
-uma Armadura                 | feminine                             
-uma Cota de mlaha            | feminine                                  
-uma Picareta                 | feminine                             
-uma Pistola                  | feminine                            
-uma Rede                     | feminine                         
-uma Caneca                   | feminine                           
-uma Chave                    | feminine                          
-uma bomba de fumaça          | feminine                                    
-uma Marreta                  | feminine                            
-uma Machado Ogro             | feminine                                 
-um Arco e Flecha             | masculine
-um Escudo                    | masculine
-um Machado                   | masculine
-um Martelo                   | masculine
-um Cajado                    | masculine
-um Livro                     | masculine
-um Óculos                    | masculine
-um Chapéu                    | masculine
-um Capuz                     | masculine
+uma Armadura Florida         | feminine
+uma Bolsa                    | feminine
+uma Bota Espectral           | feminine 
+uma Bazuca Espectral         | feminine
+um Bastão Folclórico         | masculine
+um Barril de Pólvora         | masculine
+um Boné dos Anos 90          | masculine
+uma Couraça de Doces         | feminine
+uma Caneca Venenosa          | feminine
+uma Chave                    | feminine 
+um Cajado Tecnológico        | masculine
+um Chapéu Unicórnio          | masculine
+um Capuz de Folhas           | masculine
 um Colar                     | masculine
 um Capacete                  | masculine
-um Bastão                    | masculine           
-um Aprisionador              | masculine                 
-um Arcabuz                   | masculine            
-um Arco Composto             | masculine                  
-um Arco Curto                | masculine               
-um Arco Élfico               | masculine                
-um Arco Longo                | masculine               
-um Barril de Pólvora         | masculine                      
-um Bordão                    | masculine           
-um Cajado de Batalha         | masculine                      
-um Canhão                    | masculine           
-um Canhão Portátil           | masculine                    
-um Chicote                   | masculine            
-um Dardo                     | masculine          
-um Escudo Leve               | masculine                
-um Escudo Pesado             | masculine                  
-um Flagelo                   | masculine            
-um Florete                   | masculine            
-um Taco De Baseball          | masculine                     
-um Florete-agulha            | masculine                   
-um Fogo Alquímico            | masculine                   
-um Corselete de couro        | masculine                       
-um Instrumento Mágico        | masculine                       
-um elixir de vida            | masculine                   
-um incenso                   | masculine            
-um licor de feiticeiro       | masculine                        
-um Lápis                     | masculine          
-um Monitor                   | masculine            
-um Celular                   | masculine            
-um Protetor Solar            | masculine                   
-um Lança-foguete             | masculine                  
-um Machado Anão              | masculine                 
-um Machado de Batalha        | masculine                       
-um Machado Grande            | masculine                   
-um Machado Táurico           | masculine                    
-um Mangual                   | masculine            
-um Martelo                   | masculine            
-um Mosquete                  | masculine             
-um Mosquestão                | masculine               
-um Neko-te                   | masculine            
-um Nunchaku                  | masculine             
-um Sabre                     | masculine          
-um Sifão-de-fogo             | masculine                  
-um Tridente                  | masculine             
+um Chicote                   | masculine
+um Chicote Glacial           | masculine 
+um Celular                   | masculine 
+uma Coroa espinhosa          | feminine 
+uma Coroa Mexicana           | feminine
+uma Coroa Elétrica           | feminine
+um Caldeirão de correntes    | masculine
+um Casco Espacial            | masculine
+uma Concha Enferrujada       | feminine
+um Dado Flutuante            | masculine
+uma Espada                   | feminine
+um Escudo Besouro            | masculine
+um Foguete de Brinquedo      | masculine
+um Gancho Tribal             | masculine 
+um Guarda-Chuva Solar        | masculine
+uma Gravata de correntes     | feminine
+uma Granada Sinistra         | feminine 
+um Incenso Tecnológico       | masculine
+uma Katana Podre             | feminine
+um KIT Hospitalar            | masculine
+uma Lanterna                 | feminine
+uma Lanterna Venenosa        | feminine
+uma Lanterna Abóbora         | feminine
+um Livro de Ossos            | masculine
+um Livro de Possuído         | masculine
+um Livro Emo                 | masculine
+uma Luva de Madeira          | feminine
+um Lápis Infernal            | masculine
+um Lápis Elétrico            | masculine
+um Laço                      | feminine  
+uma Máscara                  | feminine
+uma Marreta Glamourosa       | feminine
+uma Machado Divertido        | feminine
+um Martelo                   | masculine
+um Óculos Vegetal            | masculine 
+uma Pulseira                 | feminine
+uma Picareta Folclórica      | feminine
+uma Pistola                  | feminine
+uma Pochete Infantil         | feminine
+um Pijama de Sapos Mágicos   | masculine
+um Pijama Bruxo              | masculine
+uma Pantufa                  | feminine
+uma Pantufa Aracnídea        | feminine
+uma Perna Mecânica           | feminine
+uma Rede de Esqueletos       | feminine
+uma Roupa de Rock            | feminine
+um Sabre                     | masculine
+um Taco De Baseball          | masculine
+uma Túnica Mexicana          | feminine
+um Tridente Podre            | masculine
+uma Tijela Glacial           | feminine
+um Tamanco de Ossos          | masculine
+uma Varinha                  | feminine
+uma Vara                     | feminine
