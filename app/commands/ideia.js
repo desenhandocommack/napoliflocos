@@ -6,7 +6,6 @@ const articles = { masculine: 'um', feminine: 'uma' };
 const genders = ['masculine', 'feminine'];
 const races = read('races.txt');
 const classes = read('classes.txt');
-const adjectives = read('adjectives.txt');
 const equipaments = read('equipaments.txt');
 
 const verbs = [
@@ -54,11 +53,10 @@ function makeMessage() {
   const kind = rand(races)[gender];
   const clazz = rand(classes)[gender];
   const equip = rand(equipaments);
-  const adj = rand(adjectives)[equip.gender].toLowerCase();
   const article = articles[gender];
   const verb = rand(verbs);
 
-  return `\nDesenha ${article} **${kind} ${clazz} ${verb} ${equip.name} ${adj}**`;
+  return `\nDesenha ${article} **${kind} ${clazz} ${verb} ${equip.name}**`;
 }
 
 module.exports = {
