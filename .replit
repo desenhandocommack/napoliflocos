@@ -1,4 +1,4 @@
-entrypoint = "src/app/index.js"
+entrypoint = "src/app/index.mjs"
 
 hidden = [".config"]
 
