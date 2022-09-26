@@ -9,7 +9,7 @@ const client = new Client({
   intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES],
 });
 
-const commandsPath = join(__dirname, 'app', 'commands');
+const commandsPath = join(__dirname, 'commands');
 
 const prefix = '!';
 
