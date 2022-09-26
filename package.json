@@ -3,9 +3,9 @@
   "version": "0.0.1",
   "description": "A simple Discord bot",
   "private": true,
-  "main": "app/bot.js",
+  "main": "index.js",
   "scripts": {
-    "start": "node -r dotenv/config app/bot.js"
+    "start": "node -r dotenv/config index.js"
   },
   "dependencies": {
     "dice-utils": "^1.3.5",

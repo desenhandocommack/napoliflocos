@@ -2,13 +2,13 @@ const { createServer } = require('http');
 const { readdirSync } = require('fs');
 const { join } = require('path');
 const { Client, Collection, Intents } = require('discord.js');
-const deleter = require('./utils/deleter');
+const deleter = require('./app/utils/deleter');
 
 const client = new Client({
   intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES],
 });
 const commands = new Collection();
-const commandsPath = join(__dirname, 'commands');
+const commandsPath = join(__dirname, 'app', 'commands');
 const prefix = '!';
 
 createServer((_, res) => res.end('Estou funcionando!')).listen(3000);
