@@ -1,10 +1,7 @@
 import { Client, Collection, GatewayIntentBits } from 'discord.js';
 import { createServer } from 'http';
 
-import elogio from './commands/elogio.mjs';
-import ideia from './commands/ideia.mjs';
-import message from './commands/message.mjs';
-import roll from './commands/roll.mjs';
+import commandDefs from './commands/_index.mjs';
 
 createServer((_, res) => res.end('Estou funcionando!')).listen(3000);
 
@@ -18,7 +15,7 @@ const client = new Client({
 
 const prefix = '!';
 
-const commands = [elogio, ideia, message, roll].reduce(
+const commands = commandDefs.reduce(
   (acc, cmd) => acc.set(cmd.name, cmd),
   new Collection()
 );
