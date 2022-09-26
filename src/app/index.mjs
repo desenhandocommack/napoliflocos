@@ -1,9 +1,12 @@
-const { join } = require('path');
-const { Client, Collection, GatewayIntentBits } = require('discord.js');
+import { Client, Collection, GatewayIntentBits } from 'discord.js';
+import { createServer } from 'http';
 
-require('http')
-  .createServer((_, res) => res.end('Estou funcionando!'))
-  .listen(3000);
+import elogio from './commands/elogio.mjs';
+import ideia from './commands/ideia.mjs';
+import message from './commands/message.mjs';
+import roll from './commands/roll.mjs';
+
+createServer((_, res) => res.end('Estou funcionando!')).listen(3000);
 
 const client = new Client({
   intents: [
@@ -13,16 +16,12 @@ const client = new Client({
   ],
 });
 
-const commandsPath = join(__dirname, 'commands');
-
 const prefix = '!';
 
-const commands = require('fs')
-  .readdirSync(commandsPath)
-  .reduce((acc, file) => {
-    const command = require(join(commandsPath, file));
-    return acc.set(command.name, command);
-  }, new Collection());
+const commands = [elogio, ideia, message, roll].reduce(
+  (acc, cmd) => acc.set(cmd.name, cmd),
+  new Collection()
+);
 
 client
   .once('ready', () => console.log(`${client.user.tag} is logged!`))

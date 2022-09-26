@@ -1,8 +1,10 @@
-const { roll } = require('dice-utils');
+import { roll } from 'dice-utils';
 
-module.exports = {
+export default {
   name: 'roll',
+
   description: 'Rolagem de dados',
+
   execute(msg, args) {
     if (args && args.length > 0) {
       const parsed = roll(msg.content.substr(5).trim());

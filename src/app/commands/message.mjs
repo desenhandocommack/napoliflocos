@@ -1,8 +1,10 @@
-const { MessageEmbed, EmbedBuilder } = require('discord.js');
+import { EmbedBuilder } from 'discord.js';
 
-module.exports = {
+export default {
   name: 'msg',
+
   description: '',
+
   execute(msg, args) {
     if (args.length > 0) {
       const color =

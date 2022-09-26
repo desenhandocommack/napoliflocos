@@ -1,4 +1,4 @@
-const rand = require('../utils/rand');
+import rand from '../utils/rand.mjs';
 
 const compliments = [
   'Que lindo, USER. Você fez sem ajuda?',
@@ -18,9 +18,11 @@ const compliments = [
   'Meus parabéns, USER, você tem um futuro brilhante!',
 ];
 
-module.exports = {
+export default {
   name: 'elogio',
+
   description: '',
+
   execute(msg) {
     const hasAttachments = msg.attachments.size === 1;
 
