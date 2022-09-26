@@ -3,19 +3,20 @@ const { readdirSync } = require('fs');
 const { join } = require('path');
 const { Client, Collection, Intents } = require('discord.js');
 
+createServer((_, res) => res.end('Estou funcionando!')).listen(3000);
+
 const client = new Client({
   intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES],
 });
-const commands = new Collection();
+
 const commandsPath = join(__dirname, 'app', 'commands');
+
 const prefix = '!';
 
-createServer((_, res) => res.end('Estou funcionando!')).listen(3000);
-
-readdirSync(commandsPath).forEach((file) => {
+const commands = readdirSync(commandsPath).reduce((acc, file) => {
   const command = require(join(commandsPath, file));
-  commands.set(command.name, command);
-});
+  return acc.set(command.name, command);
+}, new Collection());
 
 client
   .once('ready', () => console.log(`${client.user.tag} is logged!`))
