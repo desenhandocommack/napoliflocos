@@ -1,4 +1,4 @@
-const { MessageEmbed } = require('discord.js');
+const { MessageEmbed, EmbedBuilder } = require('discord.js');
 
 module.exports = {
   name: 'msg',
@@ -8,7 +8,7 @@ module.exports = {
       const color =
         args.length > 1 && args[0].startsWith('#') ? args.shift() : '#0099ff';
 
-      const embed = new MessageEmbed()
+      const embed = new EmbedBuilder()
         .setColor(color)
         .setDescription(args.join(' '));
 

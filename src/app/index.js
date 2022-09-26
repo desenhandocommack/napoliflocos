@@ -1,22 +1,28 @@
-const { createServer } = require('http');
-const { readdirSync } = require('fs');
 const { join } = require('path');
-const { Client, Collection, Intents } = require('discord.js');
+const { Client, Collection, GatewayIntentBits } = require('discord.js');
 
-createServer((_, res) => res.end('Estou funcionando!')).listen(3000);
+require('http')
+  .createServer((_, res) => res.end('Estou funcionando!'))
+  .listen(3000);
 
 const client = new Client({
-  intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES],
+  intents: [
+    GatewayIntentBits.Guilds,
+    GatewayIntentBits.GuildMessages,
+    GatewayIntentBits.MessageContent,
+  ],
 });
 
 const commandsPath = join(__dirname, 'commands');
 
 const prefix = '!';
 
-const commands = readdirSync(commandsPath).reduce((acc, file) => {
-  const command = require(join(commandsPath, file));
-  return acc.set(command.name, command);
-}, new Collection());
+const commands = require('fs')
+  .readdirSync(commandsPath)
+  .reduce((acc, file) => {
+    const command = require(join(commandsPath, file));
+    return acc.set(command.name, command);
+  }, new Collection());
 
 client
   .once('ready', () => console.log(`${client.user.tag} is logged!`))
