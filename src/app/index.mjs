@@ -23,6 +23,8 @@ const commands = commandDefs.reduce(
 client
   .once('ready', () => console.log(`${client.user.tag} is logged!`))
 
+  // .on('debug', console.log)
+
   .on('messageCreate', (msg) => {
     if (!msg.author.bot && msg.content.startsWith(prefix)) {
       const args = msg.content.slice(prefix.length).trim().split(/ +/);
