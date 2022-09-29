@@ -3,43 +3,26 @@ Masculine                    | Feminine
 Um Anão                      | Uma Anã
 Um Anjo                      | Uma Anja
 Um Alien                     | Uma Alien
-                             | Uma Ave
-                             | Uma Água-Viva
-                             | Uma Abelha-Rainha
 Um Boneco                    | Uma Boneca
 Um Besouro-macho             | Um Besouro-fêmea
 Um Beholder                  | Uma Beholder
 Um Beholder Sci-fi           | Uma Beholder Sci-fi
-Um Baú                       
-Um Baú dos sonhos
-                             | Uma Chave
-                             | Uma Coruja
-Um Cogumelo
 Um Coelho                    | Uma Coelha
 Um Caveira-macho             | Uma Caveira-fêmea
 Um Centauro                  | Uma Centaura
-                             | Uma Concha-do-Mar
-Um Corvo
-Um Carangueijo
 Um Bode                      | Uma Cabra
 Um Duende                    | Uma Duende
 Um Dragão                    | Uma Dragoa
 Um Dragão-Borboleta          | Uma Dragoa-Borboleta
 Um Ent (Criatura Arvoresca)  | Uma Ent (Criatura Arvoresca)
 Um Elfo                      | Uma Elfa
-                             | Uma Estrela
-Um Fantasma
-                             | Uma Fada
-                             | Uma Fada do Sol
-Um Flamingo
 Um Garoto                    | Uma Garota
 Um Goblin                    | Uma Goblin
 Um Gigante                   | Uma Gigante
 Um Galo                      | Uma Galinha
 Um Gênio                     | Uma Gênia 
 Um Gato                      | Uma Gata
-Um Grilo
-Um Golem
+Um Golem                     | Uma Golem
 Um Garoto Tribal             | Uma Garota Tribal
 Um Homem-Abóbora             | Uma Mulher-Abóbora 
 Um Humano                    | Uma Humana
@@ -49,22 +32,18 @@ Um Homem-Lobo                | Uma Mulher-Lobo
 Um Homem-Rinoceronte         | Uma Mulher-Rinoceronte
 Um Homem-Tigre               | Uma Mulher-Tigre
 Um Kobold                    | Uma Kobold
-Um Kraken
+Um Kraken                    | Uma Kraken
 Um Lobisomen                 | Uma Lobisomen
-Um Leprechaun
+Um Leprechaun                | Uma Leprechaun
 Um Menino-Guloseima          | Uma Menina-Guloseima                       
 Um Minotauro                 | Uma Minotaura
 Um Macaco                    | Uma Macaca
 Um Macaco-da-Aldeia          | Uma Macaca-da-Aldeia
-Um Monstro
 Um Menino-Robô               | Uma Menina-Robô
-                             | Uma Múmia
 Um Menino-Coelho             | Uma Menina-Coelha
 Um Menino-Estrela            | Uma Menina-Estrela
-                             | Uma Nuvem
 Um Orc                       | Uma Orquisa
 Um Ogro                      | Uma Ogra
-                             | Uma Planta
 Um Rato                      | Uma Rata
 Um Robô                      | Uma Robô
 Um Robô-Carnivoro            | Uma Robô-Carnivoro
@@ -73,13 +52,32 @@ Um Sapo-da-Aldeia            | Uma Sapa-da-Aldeia
 Um Slime                     | Uma Slime
 Um Tritão                    | Uma Sereia
 Um Tritão-do-Pântano         | Uma Sereia-do-Pântano
-                             | Uma Tartaruga
-Um Tigre
-Um Unicórnio
-Um Unicórnio Tribal da Floresta
-Um Unicórnio Sci-fi                
 Um Vampiro                   | Uma Vampira
-Um Vegetal
 Um Zumbi                     | Uma Zumbi
 Um Zumbi-Inflamável          | Uma Zumbi-Inflamável
-Um Zumbi dos Sonhos
+Um Zumbi dos Sonhos          | Uma Zumbi dos Sonhos
+Um Tigre                     | Uma Tigresa
+Uma Ave
+Uma Água-Viva
+Uma Abelha-Rainha
+Uma Chave
+Uma Coruja
+Uma Concha-do-Mar
+Uma Estrela
+Uma Fada
+Uma Fada do Sol
+Uma Múmia
+Uma Nuvem
+Um Vegetal
+Uma Planta
+Uma Tartaruga
+Um Unicórnio
+Um Unicórnio Tribal da Floresta
+Um Unicórnio Sci-fi
+Um Baú                       
+Um Baú dos sonhos
+Um Cogumelo
+Um Corvo
+Um Carangueijo
+Um Fantasma
+Um Flamingo
