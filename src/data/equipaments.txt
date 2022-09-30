@@ -1,72 +1,68 @@
 Name                         | Gender
 -----------------------------|--------------------------------------------------
-uma Adaga                    | feminine
-uma Armadura Florida         | feminine
-uma Bolsa                    | feminine
-uma Bota Espectral           | feminine 
-uma Bazuca Espectral         | feminine
 um Bastão Folclórico         | masculine
 um Barril de Pólvora         | masculine
 um Boné dos Anos 90          | masculine
-uma Couraça de Doces         | feminine
-uma Caneca Venenosa          | feminine
-uma Chave                    | feminine 
 um Cajado Tecnológico        | masculine
 um Chapéu Unicórnio          | masculine
 um Capuz de Folhas           | masculine
 um Colar                     | masculine
 um Capacete                  | masculine
 um Chicote                   | masculine
-um Chicote Glacial           | masculine 
 um Celular                   | masculine 
-uma Coroa espinhosa          | feminine 
-uma Coroa Mexicana           | feminine
-uma Coroa Elétrica           | feminine
 um Caldeirão de correntes    | masculine
 um Casco Espacial            | masculine
-uma Concha Enferrujada       | feminine
 um Dado Flutuante            | masculine
-uma Espada                   | feminine
 um Escudo Besouro            | masculine
 um Foguete de Brinquedo      | masculine
 um Gancho Tribal             | masculine 
 um Guarda-Chuva Solar        | masculine
-uma Gravata de correntes     | feminine
-uma Granada Sinistra         | feminine 
 um Incenso Tecnológico       | masculine
-uma Katana Podre             | feminine
 um KIT Hospitalar            | masculine
-uma Lanterna                 | feminine
-uma Lanterna Venenosa        | feminine
-uma Lanterna Abóbora         | feminine
 um Livro de Ossos            | masculine
 um Livro de Possuído         | masculine
 um Livro Emo                 | masculine
-uma Luva de Madeira          | feminine
 um Lápis Infernal            | masculine
 um Lápis Elétrico            | masculine
-um Laço                      | feminine  
-uma Máscara                  | feminine
-uma Marreta Glamourosa       | feminine
-uma Machado Divertido        | feminine
+um Laço                      | masculine  
+um Machado                   | masculine
 um Martelo                   | masculine
 um Óculos Vegetal            | masculine 
+um Pijama                    | masculine
+um Sabre                     | masculine
+um Taco De Baseball          | masculine
+um Tridente Podre            | masculine
+um Tamanco de Ossos          | masculine
+uma Adaga                    | feminine
+uma Armadura Florida         | feminine
+uma Bolsa                    | feminine
+uma Bota Espectral           | feminine 
+uma Bazuca Espectral         | feminine
+uma Couraça de Doces         | feminine
+uma Caneca                   | feminine
+uma Chave                    | feminine 
+uma Coroa espinhosa          | feminine 
+uma Coroa Mexicana           | feminine
+uma Coroa Elétrica           | feminine
+uma Concha Enferrujada       | feminine
+uma Espada                   | feminine
+uma Gravata de correntes     | feminine
+uma Granada Sinistra         | feminine 
+uma Katana Podre             | feminine
+uma Lanterna                 | feminine
+uma Lanterna Abóbora         | feminine
+uma Luva de Madeira          | feminine
+uma Máscara                  | feminine
+uma Marreta Glamourosa       | feminine
 uma Pulseira                 | feminine
 uma Picareta Folclórica      | feminine
 uma Pistola                  | feminine
 uma Pochete Infantil         | feminine
-um Pijama de Sapos Mágicos   | masculine
-um Pijama Bruxo              | masculine
 uma Pantufa                  | feminine
-uma Pantufa Aracnídea        | feminine
 uma Perna Mecânica           | feminine
 uma Rede de Esqueletos       | feminine
 uma Roupa de Rock            | feminine
-um Sabre                     | masculine
-um Taco De Baseball          | masculine
 uma Túnica Mexicana          | feminine
-um Tridente Podre            | masculine
 uma Tijela Glacial           | feminine
-um Tamanco de Ossos          | masculine
 uma Varinha                  | feminine
 uma Vara                     | feminine
