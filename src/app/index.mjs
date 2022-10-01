@@ -1,4 +1,4 @@
-import { Client, Collection, GatewayIntentBits } from 'discord.js';
+import { Client, Collection, GatewayIntentBits, PermissionFlagsBits } from 'discord.js';
 import { createServer } from 'http';
 
 import commandDefs from './commands/_index.mjs';
@@ -31,7 +31,8 @@ client
       const command = args.shift().toLowerCase();
 
       if (
-        (command === 'msg' && msg.member.permissions.has('ADMINISTRATOR')) ||
+        (command === 'msg' &&
+          msg.member.permissions.has(PermissionFlagsBits.Administrator)) ||
         msg.channel.name === '🍧napoliflocos'
       ) {
         if (commands.has(command)) {
