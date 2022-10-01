@@ -1,3 +1,5 @@
+import { ThreadAutoArchiveDuration } from 'discord.js';
+
 export default function startThread(msg, username) {
   if (msg.attachments.size > 0) {
     const attachmentName = msg.attachments.first().name;

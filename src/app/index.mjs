@@ -55,7 +55,9 @@ client
             }
           }
         }
-      } else if (['🌳publicações'].includes(msg.channel.name)) {
+      } else if (
+        ['🌱feedback', '📷fotos', '🌳publicações'].includes(msg.channel.name)
+      ) {
         startThread(msg, msg.author.username);
       }
     }
