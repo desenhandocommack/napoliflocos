@@ -9,11 +9,11 @@
     "start": "node -r dotenv/config src/app/index.mjs"
   },
   "dependencies": {
-    "dice-utils": "^1.3.5",
-    "discord.js": "^14.7.1"
+    "dice-utils": "^1.3.7",
+    "discord.js": "^14.14.1"
   },
   "devDependencies": {
-    "dotenv": "^16.0.3",
-    "eslint": "^8.34.0"
+    "dotenv": "^16.4.5",
+    "eslint": "^8.56.0"
   }
 }
